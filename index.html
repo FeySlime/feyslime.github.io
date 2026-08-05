@@ -39,8 +39,8 @@
       }
 
       .books{
-        width: 180px;
-        height: 420px;
+        width: 260px;
+        height: 520px;
         background:rgba(255,255,255,0.8);
         border-radius: 6px;
         text-decoration: none;
@@ -51,9 +51,20 @@
         font-size: 28px;
         font-weight: bold;
         transition:.25s;
-        clip-path:polygon(0 0, 100% 10%, 100% 100%, 0 100%);
         position:relative;
         overflow:hidden;
+      }
+
+      .left-book{
+        clip-path: polygon(0 22%, 100 0, 100% 100%, 0 100%);
+      }
+
+      .middle-book{
+        clip-path: polygon(50% 0, 100% 12%, 100% 100%, 0 100%, 0 12%);
+      }
+
+      .right-book{
+        clip-path: polygon(0 0, 100% 22%, 100% 100%, 0 100%);
       }
 
       .books:hover{
@@ -81,6 +92,23 @@
         transition:.25s;
       }
 
+      .book-portrait-left{
+        position: absolute;
+        left: -10px;
+        bottom: 0;
+        height: 95%;
+      }
+
+      .book-portrait-right{
+        position: absolute;
+        right: -10px;
+        bottom: 0;
+        height: 95%;
+      }
+
+      .books:hover .book-portrait-left, .books:hover .book-portrait-right{
+        transform:translateY(-20px);
+      }
       .game-title{
         margin-top:15px;
         color:white;
@@ -96,6 +124,12 @@
         transition:.25s;
       }
       
+      .center-game{
+        margin-top: -80px;
+      }
+      .center-game .books{
+        width: 340px;
+      }
 
     </style>
   </head>
@@ -107,7 +141,7 @@
 
       <div class="game">
 
-        <a class="books" href="./gamesies/LC.html">
+        <a class="books left-book" href="./gamesies/LC.html">
 
           <img class="book-bg" src="./assets/covers/Lobotomy Corporation.png">
 
@@ -122,14 +156,14 @@
           
       </div> 
     
-      <div class="game">
+      <div class="game center-game">
 
-        <a class="books" href="./gamesies/LOR.html">
+        <a class="books middle-book" href="./gamesies/LOR.html">
 
           <img class="book-bg" src="./assets/covers/Library Of Ruina.png">
 
-          <img class="book-portrait" src="./assets/images/Angela2.png">
-          <img class="book-portrait2" src="./assets/images/Roland1.png">
+          <img class="book-portrait-right" src="./assets/images/Angela2.png">
+          <img class="book-portrait-left" src="./assets/images/Roland1.png">
         </a>
 
           <div class="game-title">
@@ -142,7 +176,7 @@
 
       <div class="game">
 
-       <a class="books" href="./gamesies/LCB.html">
+       <a class="books right-book" href="./gamesies/LCB.html">
 
           <img class="book-bg" src="./assets/covers/Limbus Company.png">
 
