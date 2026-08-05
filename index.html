@@ -7,7 +7,7 @@
     <style>
       body {
         margin: 0;
-        background-image: url("./assets/covers/Inside the Library 2.png");
+        background-image: url("./assets/images/Inside the Library 2.png");
         background-size:cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -32,8 +32,8 @@
       }
 
       .books{
-        width: 170px;
-        height: 400px;
+        width: 180px;
+        height: 420px;
         background:rgba(255,255,255,0.8);
         border-radius: 6px;
         text-decoration: none;
@@ -43,13 +43,35 @@
         align-items: center;
         font-size: 28px;
         font-weight: bold;
-        transition:.2s;
+        transition:.25s;
         clip-path:polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+        position:relative;
+        overflow:hidden;
       }
 
       .books:hover{
         transform: translateY(-15px);
         background: white;
+      }
+
+      .books:hover .book-portrait{
+        transform: translateY(-20px);
+      }
+
+      .book-bg{
+        position: absolute;
+        inset:0;
+        width:100%;
+        height:100%;
+
+        object-fit: cover;
+      }
+
+      .book-portrait{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        transition:.25s;
       }
       
 
@@ -61,17 +83,27 @@
 
     <div class="games">
       <a class="books" href="./gamesies/LC.html">
-        Lobotomy Corporation
+
+        <img class="book-bg" src="./assets/covers/Lobotomy Corporation.png">
+
+        <img class="book-portrait" src="./assets/images/Angela1.png">
+        
       </a>
 
        <div class="games">
       <a class="books" href="./gamesies/LOR.html">
-        Library Of Ruina
+
+        <img class="book-bg" src="./assets/covers/Library Of Ruina.png">
+
+        <img class="book-portrait" src="./assets/images/Angela2.png">
       </a>
 
        <div class="games">
       <a class="books" href="./gamesies/LCB.html">
-        Limbus Company
+
+       <img class="book-bg" src="./assets/covers/Limbus Company.png">
+
+        <img class="book-portrait" src="./assets/images/Dante.png">
       </a>
 
     </div>
