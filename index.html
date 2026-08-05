@@ -31,6 +31,13 @@
         gap: 60px;
       }
 
+      .game{
+        width:180px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+      }
+
       .books{
         width: 180px;
         height: 420px;
@@ -75,14 +82,18 @@
       }
 
       .game-title{
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        color: white;
-        font-size: 28px;
+        margin-top:15px;
+        color:white;
+        font-size:26px;
+        text-align:center;
         text-shadow: 0 0 10px black;
+      }
+
+      .game-logo{
+        width:140px;
+        margin-top:8px;
+        opacity:.6;
+        transition:.25s;
       }
       
 
@@ -93,35 +104,55 @@
     <h1> The Library 2 </h1>
 
     <div class="games">
-      <a class="books" href="./gamesies/LC.html">
 
-        <img class="book-bg" src="./assets/covers/Lobotomy Corporation.png">
+      <div class="game">
 
-        <img class="book-portrait" src="./assets/images/Angela1.png">
+        <a class="books" href="./gamesies/LC.html">
 
-        <div class="game-title">
-          Lobotomy Corporation
-        </div> 
-        
-      </a>
+          <img class="book-bg" src="./assets/covers/Lobotomy Corporation.png">
 
-       <div class="games">
-      <a class="books" href="./gamesies/LOR.html">
+          <img class="book-portrait" src="./assets/images/Angela1.png">
+       </a>
 
-        <img class="book-bg" src="./assets/covers/Library Of Ruina.png">
+          <div class="game-title">
+            Lobotomy Corporation
+          </div> 
 
-        <img class="book-portrait" src="./assets/images/Angela2.png">
-        <img class="book-portrait2" src="./assets/images/Roland1.png">
-      </a>
+          <img class="game-logo" src="./assets/logos/LobotomyLogo.png"> 
+      </div> 
+    
+      <div class="game">
 
-       <div class="games">
-      <a class="books" href="./gamesies/LCB.html">
+        <a class="books" href="./gamesies/LOR.html">
 
-       <img class="book-bg" src="./assets/covers/Limbus Company.png">
+          <img class="book-bg" src="./assets/covers/Library Of Ruina.png">
 
-        <img class="book-portrait" src="./assets/images/Dante.png">
-      </a>
+          <img class="book-portrait" src="./assets/images/Angela2.png">
+          <img class="book-portrait2" src="./assets/images/Roland1.png">
+        </a>
 
+          <div class="game-title">
+            Library of Ruina
+          </div> 
+
+          <img class="game-logo" src="./assets/logos/LibraryLogo.png"> 
+      </div>
+
+      <div class="game">
+
+       <a class="books" href="./gamesies/LCB.html">
+
+          <img class="book-bg" src="./assets/covers/Limbus Company.png">
+
+          <img class="book-portrait" src="./assets/images/Dante.png">
+        </a>
+
+         <div class="game-title">
+            Limbus Company
+          </div> 
+
+            <img class="game-logo" src="./assets/logos/LimbusLogo.png"> 
+      </div>
     </div>
 
   </body>
