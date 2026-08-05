@@ -1,5 +1,5 @@
 # The Limbus Library
-## https://feyslime.github.io/
+## https://feyslime.github.io/The-Project-Moon-Library
 
 The Limbus Library is a collection of all book sources from the Project Moon verse. Allowing for easy reading with the reader and download of either the epub file or the pdf.
 Please be patient as I collect these in my free time and I haven't read every single book in the green world.
